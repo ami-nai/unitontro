@@ -39,7 +39,8 @@ dependencies:
   get:
   flutter_animate: ^4.5.2
   google_fonts:
-  arcore_flutter_plugin: ^0.1.0
+  ar_flutter_plugin: ^0.7.3
+  geolocator: ^9.0.2
   
 
 dev_dependencies:
