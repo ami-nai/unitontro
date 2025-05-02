@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:unitontro/pages/features/map/map_page.dart';
 import 'package:unitontro/pages/features/routine/routine_page.dart';
 import 'package:get/get.dart';
 
@@ -160,7 +161,7 @@ class Homepage extends StatelessWidget {
             bottom: centerY - circularBtnHeight - 3,
             child: GestureDetector(
               onTap: () {
-                Get.to(() => RoutinePage());
+                Get.to(() => MapPage());
               },
               child: Container(
                       width: circularBtnWidth,
