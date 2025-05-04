@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:unitontro/pages/features/map/map_page.dart';
 import 'package:unitontro/pages/features/routine/routine_page.dart';
 import 'package:get/get.dart';
 import 'package:unitontro/pages/individual_routine_page.dart'; 
@@ -162,6 +163,7 @@ class Homepage extends StatelessWidget {
             child: GestureDetector(
               onTap: () {
                 Get.to(() => IndividualRoutinePage());  //ekhane
+
               },
               child: Container(
                       width: circularBtnWidth,
