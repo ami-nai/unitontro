@@ -13,7 +13,6 @@ class SupabaseApiClient {
           .select()
           .order('time', ascending: true);
       
-      print("Raw response: $response");
       
       if(response.isEmpty) {
         print("No classes found");

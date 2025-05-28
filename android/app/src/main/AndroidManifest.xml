@@ -2,6 +2,10 @@
     
     <uses-sdk android:minSdkVersion="24" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Required to fetch data from the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- ... -->
+
 
     <!-- If your app was previously AR Required, don't forget to remove the
         `<uses-feature android:name="android.hardware.camera.ar" />` entry, as
@@ -12,7 +16,8 @@
     <application
         android:label="unitontro"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/unitontro_logo">
+        <!-- android:icon="@mipmap/ic_launcher"> -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
