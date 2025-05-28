@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:unitontro/pages/features/routine/routine_page.dart';
 import 'package:get/get.dart';
-import 'package:unitontro/pages/features/routine/individual_routine_page.dart'; 
+import 'package:unitontro/ui/routine/widgets/individual_routine_page.dart'; 
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -16,14 +15,15 @@ class Homepage extends StatelessWidget {
     final double circularBtnHeight = circularBtnWidth;
 
     final double centerX = width / 2;
-    final double centerY =
-        height * 0.5; // Adjust the center position vertically
+    final double centerY = height * 0.5; // Adjust the center position vertically
 
     // Colors
-    final Color btnColor1 = const Color(0xFF1A502E); // Green color
+    final Color btnColor1 = const Color(0xFF1A502E);
     final Color btnColor2 = const Color(0xBF1A502E);
     final Color btnColor3 = const Color(0xFFB7E4C8);
     final Color btnColor4 = const Color(0x731A502E);
+
+    print("hi");
 
     //Corners
     const Radius cornerRadius =

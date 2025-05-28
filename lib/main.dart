@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:unitontro/components/customtheme.dart';
-import 'package:unitontro/pages/home_page.dart';
+import 'package:unitontro/data/services/initialization_service.dart';
+import 'package:unitontro/ui/core/themes/customtheme.dart';
+import 'package:unitontro/ui/home_page/widgets/home_page.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  await InitializationService.initializeApp();
   runApp(const MyApp());
 }
 
