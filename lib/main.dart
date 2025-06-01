@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:unitontro/data/services/initialization_service.dart';
 import 'package:unitontro/ui/core/themes/customtheme.dart';
 import 'package:unitontro/ui/home_page/widgets/home_page.dart';
@@ -8,6 +9,12 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   await InitializationService.initializeApp();
+
+  Gemini.instance.prompt(parts: [
+    Part.text('Write a story about a magic backpack'),
+  ]).then((value) {
+    print(value?.output);
+  });
   runApp(const MyApp());
 }
 

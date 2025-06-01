@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:get/get.dart';
+import 'package:unitontro/ui/chat_with_ai/widgets/ask_ai.dart';
 import 'package:unitontro/ui/routine/widgets/individual_routine_page.dart'; 
 
 class Homepage extends StatelessWidget {
@@ -161,7 +162,7 @@ class Homepage extends StatelessWidget {
             bottom: centerY - circularBtnHeight - 3,
             child: GestureDetector(
               onTap: () {
-                Get.to(() => IndividualRoutinePage());  //ekhane
+                Get.to(() => AskAi());  //ekhane
 
               },
               child: Container(

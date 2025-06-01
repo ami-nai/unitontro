@@ -1,4 +1,5 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class InitializationService {
@@ -6,6 +7,7 @@ class InitializationService {
     await loadEnv();
 
     await initializeSupabase();
+    await initializeGemini();
   }
 
 }
@@ -20,4 +22,10 @@ Future<void> initializeSupabase() async{
     url: dotenv.env['SUPABASE_URL'] ?? '',
     anonKey: dotenv.env['SUPABASE_KEY'] ?? '',
   );
+}
+
+Future<void> initializeGemini() async{
+  await Gemini.init(
+    apiKey: dotenv.env['gemini_api_key'] ?? '',
+    );
 }

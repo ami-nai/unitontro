@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:unitontro/ui/chat_with_ai/widgets/ask_ai.dart';
 
 class BottomNavigationController extends GetxController {
   var selectedIndex = 0.obs; // Observable for the selected index
