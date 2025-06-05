@@ -10,11 +10,7 @@ Future<void> main() async {
   
   await InitializationService.initializeApp();
 
-  Gemini.instance.prompt(parts: [
-    Part.text('Write a story about a magic backpack'),
-  ]).then((value) {
-    print(value?.output);
-  });
+  
   runApp(const MyApp());
 }
 
@@ -25,6 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,

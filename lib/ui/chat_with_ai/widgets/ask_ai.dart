@@ -4,7 +4,7 @@ import 'package:flutter_gemini/flutter_gemini.dart';
 
 class AskAiController extends GetxController {
   var prompt = "".obs; // Observable for the prompt
-  var response = "".obs; // Observable for the AI response
+  var response = "...".obs; // Observable for the AI response
   var isLoading = false.obs; // Observable for loading state
 
   Future<void> sendPrompt() async {
@@ -66,15 +66,24 @@ class AskAi extends StatelessWidget {
                         ? const CircularProgressIndicator(
                             color: Colors.white,
                           )
-                        : const Text('Send Prompt', style: TextStyle(fontSize: 16, color: Colors.black)),
+                        : Center(child: const Text('Ask', style: TextStyle(fontSize: 16, color: Colors.black))),
                   )),
-              const SizedBox(height: 30),
               
-              const SizedBox(height: 10),
-              Obx(() => Text(
-                    controller.response.value,
-                    style: const TextStyle(fontSize: 16, color: Colors.black87),
-                  )),
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.all(8.0),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                child: Obx(() => Text(
+                      controller.response.value,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black87,
+                        ),
+                    )),
+              ),
             ],
           ),
         ),

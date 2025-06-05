@@ -3,7 +3,9 @@ import 'package:unitontro/data/model/class_model.dart';
 import 'package:unitontro/data/repositories/class_repository.dart';
 
 class Classes extends StatelessWidget {
-  const Classes({super.key});
+  Classes({super.key});
+
+  List<ClassInfo> classeses = [];
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class Classes extends StatelessWidget {
         }
         
         if (!snapshot.hasData || snapshot.data!.isEmpty) {
-          return const Center(child: Text('No classes found'));
+          return const Center(child: Text('No class found'));
         }
         
         return _buildClassList(snapshot.data!);
@@ -28,6 +30,7 @@ class Classes extends StatelessWidget {
   }
 
   Widget _buildClassList(List<ClassInfo> classes) {
+    classeses = classes;
     return Column(
       children: classes.map((classInfo) => _buildClassItem(classInfo)).toList(),
     );

@@ -1,6 +1,12 @@
 # unitontro
 
-A new Flutter project.
+An all in one university app built on flutter.
+## Homepage | Routine | AI Chat
+
+![alt text](image.png) ![alt text](image-1.png) ![alt text](image-2.png)
+
+This project is ongoing.
+
 
 ## Getting Started
 
