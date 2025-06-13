@@ -4,6 +4,7 @@ import 'package:unitontro/data/services/initialization_service.dart';
 import 'package:unitontro/ui/core/themes/customtheme.dart';
 import 'package:unitontro/ui/home_page/widgets/home_page.dart';
 import 'package:get/get.dart';
+import 'package:unitontro/ui/signup/widgets/signup_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,
       themeMode: ThemeMode.system, // Use system theme mode
-      home: const Homepage(),
+      home: SignupScreen(),
     );
   }
 }

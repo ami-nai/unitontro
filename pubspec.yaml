@@ -41,6 +41,7 @@ dependencies:
   flutter_dotenv:
   supabase_flutter:
   flutter_gemini: ^3.0.0
+  supabase_auth_ui: ^0.5.5
   
 
 dev_dependencies:
