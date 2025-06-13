@@ -56,7 +56,7 @@ class CustomTheme{
 
       brightness: Brightness.dark,
       primaryColor: Colors.blue.shade300,
-      scaffoldBackgroundColor: const Color.fromRGBO(226, 11, 83, 0.612),
+      scaffoldBackgroundColor: Colors.black,
 
       colorScheme: ColorScheme.dark(
         primary: const Color.fromRGBO(183, 228, 200, 100),

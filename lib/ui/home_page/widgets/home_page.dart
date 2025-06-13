@@ -3,6 +3,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:get/get.dart';
 import 'package:unitontro/ui/chat_with_ai/widgets/ask_ai.dart';
 import 'package:unitontro/ui/routine/widgets/individual_routine_page.dart'; 
+import 'package:unitontro/ui/core/themes/customtheme.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
