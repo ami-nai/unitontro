@@ -5,7 +5,6 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 class InitializationService {
   static Future<void> initializeApp() async {
     await loadEnv();
-
     await initializeSupabase();
     await initializeGemini();
   }
